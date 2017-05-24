@@ -1,0 +1,8 @@
+[boltron]
+name=Boltron
+baseurl=https://kojipkgs.stg.fedoraproject.org/compose/branched/jkaluza/latest-Fedora-Modular-26/compose/Server/x86_64/os/
+enabled=1
+gpgcheck=0
+metadata_expire=0
+modules=1
+
