@@ -5,7 +5,7 @@ This docker installs an unreleased DNF version from <https://copr.fedorainfraclo
 ## Usage
 
 	docker build -t dnf-modularity .
-	docker run -it dnf-modularity /bin/bash
+	docker run -it --cap-add=SYS_ADMIN dnf-modularity /bin/bash
 
 ## DNF with modularity support
 
@@ -25,3 +25,5 @@ This docker installs an unreleased DNF version from <https://copr.fedorainfraclo
 ## Mock experiments
 
 Requires `master` mock from <https://github.com/rpm-software-management/mock>
+
+	mock -r modularity-1-x86_64 --init

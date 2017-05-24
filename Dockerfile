@@ -19,5 +19,8 @@ COPY etc/dnf/dnf.conf /etc/dnf/dnf.conf
 # Taken from https://github.com/mhatina/dnf/blob/modules_install/tests/modules/etc/dnf/repos.d/boltron.repo
 COPY etc/yum.repos.d/boltron.repo /etc/yum.repos.d/boltron.repo
 
+RUN dnf -y install mock
+COPY etc/mock/modularity-1-x86_64.cfg /etc/mock/modularity-1-x86_64.cfg
+
 
 CMD ["/usr/sbin/init"]
