@@ -21,6 +21,7 @@ COPY etc/yum.repos.d/boltron.repo /etc/yum.repos.d/boltron.repo
 
 # Install Mock with modularity support
 RUN dnf -y copr enable frostyx/mock-modularity
+RUN dnf -y copr enable @mock/mock
 RUN dnf -y install mock
 COPY etc/mock/modularity-1-x86_64.cfg /etc/mock/modularity-1-x86_64.cfg
 
