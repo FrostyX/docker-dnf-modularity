@@ -26,4 +26,4 @@ This docker installs an unreleased DNF version from <https://copr.fedorainfraclo
 
 Requires `master` mock from <https://github.com/rpm-software-management/mock>
 
-	mock -r modularity-1-x86_64 --init
+	mock -r modularity-1-x86_64 --init --no-bootstrap-chroot
